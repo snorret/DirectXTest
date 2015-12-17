@@ -7,12 +7,11 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="ReadMe.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="Window.h" />
+    <ClInclude Include="MessagePump.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Window.cpp" />
+    <ClCompile Include="MessagePump.cpp" />
   </ItemGroup>
 </Project>

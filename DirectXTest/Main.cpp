@@ -1,6 +1,7 @@
-#include <windows.h>
+#include "windows.h"
 
-#include <Window.h>
+#include "Window.h"
+#include "MessagePump.h"
 
 class Application
 {
@@ -12,27 +13,10 @@ public:
 
 	void Run()
 	{
-		while (true)
+		MessagePump messagePump;
+		while (messagePump())
 		{
-			ProcessWindowsMessages();
 		}
-	}
-
-	bool ProcessWindowsMessages()
-	{
-		MSG msg = { 0 };
-		if (PeekMessage(&msg, 0, 0, 0, PM_REMOVE))
-		{
-			TranslateMessage(&msg);
-			DispatchMessage(&msg);
-
-			if (msg.message == WM_QUIT)
-			{
-				return false;
-			}
-		}
-
-		return true;
 	}
 
 private:
@@ -42,7 +26,7 @@ private:
 int APIENTRY wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLine, int nCmdShow)
 {
 	Application app;
+	app.Run();
 	
-
 	return 0;
 }
