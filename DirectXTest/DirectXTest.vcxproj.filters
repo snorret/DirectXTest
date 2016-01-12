@@ -13,5 +13,21 @@
     <ClCompile Include="Main.cpp">
       <Filter>App</Filter>
     </ClCompile>
+    <ClCompile Include="Triangle.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Triangle.h">
+      <Filter>App</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="TriangleVS.hlsl">
+      <Filter>App</Filter>
+    </FxCompile>
+    <FxCompile Include="TrianglePS.hlsl">
+      <Filter>App</Filter>
+    </FxCompile>
   </ItemGroup>
 </Project>

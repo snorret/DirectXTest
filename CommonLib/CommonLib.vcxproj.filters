@@ -9,9 +9,11 @@
   <ItemGroup>
     <ClInclude Include="Window.h" />
     <ClInclude Include="MessagePump.h" />
+    <ClInclude Include="DirectX11Renderer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Window.cpp" />
     <ClCompile Include="MessagePump.cpp" />
+    <ClCompile Include="DirectX11Renderer.cpp" />
   </ItemGroup>
 </Project>

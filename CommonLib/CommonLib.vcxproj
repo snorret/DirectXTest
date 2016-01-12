@@ -131,10 +131,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="DirectX11Renderer.h" />
     <ClInclude Include="MessagePump.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DirectX11Renderer.cpp" />
     <ClCompile Include="MessagePump.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
